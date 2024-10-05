@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر الطعام</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        header .icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .icons div {
+            font-size: 20px;
+        }
+        header h1 {
+            font-size: 24px;
+            color: black;
+            margin: 0;
+        }
+        .search-bar {
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar input {
+            width: 90%;
+            padding: 10px;
+            border-radius: 25px;
+            border: 1px solid #ddd;
+            background-color: #f2f2f2;
+            font-size: 16px;
+        }
+        .category-section, .suggestions {
+            margin: 20px;
+        }
+        .category-section h2, .suggestions h2 {
+            font-size: 18px;
+            color: black;
+            margin-bottom: 10px;
+        }
+        .categories {
+            display: flex;
+            justify-content: space-between;
+        }
+        .category {
+            text-align: center;
+        }
+        .category img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .category p {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .suggestions .product-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .suggestions .product-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+        .product-info {
+            font-size: 14px;
+        }
+        .product-info h3 {
+            margin: 0;
+            font-size: 16px;
+            color: black;
+        }
+        .product-info p {
+            margin: 5px 0;
+            color: #777;
+        }
+        footer {
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        footer div {
+            text-align: center;
+        }
+        footer div i {
+            font-size: 20px;
+            color: grey;
+        }
+        footer div p {
+            margin: 5px 0 0;
+            font-size: 12px;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="icons">
+            <div><i class="fa fa-bell"></i></div>
+            <h1>فروعنا</h1>
+            <div><i class="fa fa-map-marker"></i></div>
+        </div>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" placeholder="بحث عن أصناف الجمال">
+    </div>
+
+    <div class="category-section">
+        <h2>اختر الصنف</h2>
+        <div class="categories">
+            <div class="category">
+                <img src="https://picsum.photos/60?random=1" alt="مقبلات">
+                <p>مقبلات</p>
+            </div>
+            <div class="category">
+                <img src="https://picsum.photos/60?random=2" alt="فريكة">
+                <p>فريكة</p>
+            </div>
+            <div class="category">
+                <img src="https://picsum.photos/60?random=3" alt="مندي">
+                <p>مندي</p>
+            </div>
+            <div class="category">
+                <img src="https://picsum.photos/60?random=4" alt="منسف">
+                <p>منسف</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="suggestions">
+        <h2>اقتراحات قد تعجبك</h2>
+        <div class="product-card">
+            <img src="https://picsum.photos/150?random=5" alt="منتج">
+            <div class="product-info">
+                <h3>زرب مندي 1 كيلو</h3>
+                <p>1.0 km - 4.8 reviews</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://picsum.photos/150?random=6" alt="منتج">
+            <div class="product-info">
+                <h3>منسف لحم 1 كيلو</h3>
+                <p>500 m - 4.8 reviews</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <i class="fa fa-home"></i>
+            <p>الرئيسية</p>
+        </div>
+        <div>
+            <i class="fa fa-file"></i>
+            <p>الطلبات</p>
+        </div>
+        <div>
+            <i class="fa fa-heart"></i>
+            <p>المفضلة</p>
+        </div>
+        <div>
+            <i class="fa fa-user"></i>
+            <p>حسابي</p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</body>
+</html>
